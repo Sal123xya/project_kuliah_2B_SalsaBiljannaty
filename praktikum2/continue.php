@@ -7,7 +7,7 @@
                 if($i == 2){
                      continue;
                 }
-                echo(nilai"Nilai i : $i <br>");
+                echo("Nilai i : $i <br>");
             }
             echo("Loop selesai");
         ?>
