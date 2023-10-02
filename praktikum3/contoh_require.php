@@ -5,5 +5,4 @@
     function tulisantebal ($teks){
         echo "<b>$teks</b>";
     }
-
 ?>

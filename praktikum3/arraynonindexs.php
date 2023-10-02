@@ -7,7 +7,6 @@
     $nama[] = "Muhammad";
     $nama[] = "Faruq";
     $nama[] = "Zakiuddin";
-    
     echo "Hallo";
     echo " Isi array \$anak[0] adalah $nama[0]";
     echo "<br>";
