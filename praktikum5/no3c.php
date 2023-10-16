@@ -12,10 +12,10 @@
     $email = $_POST["email"];
     $komentar = $_POST["komentar"];
     $conn = mysqli_connect ("localhost", "root", "", "db_saya") or die ("koneksi gagal");
-    echo "Nama : $nama <br>";
-    echo "Email : $email <br>";
+    echo "nama : $nama <br>";
+    echo "email : $email <br>";
     echo "Komentar : $komentar <br>";
-    $hasil = mysqli_query($conn, "insert into bukutamu (nama,email,komentar) values ('$nama','$email','$komentar')");
+    $hasil = mysqli_query($conn, "INSERT INTO bukutamu (nama,email,komentar) VALUES ('$nama','$email','$komentar')");
     echo "Simpan bukutamu berhasil dilakukan";
     ?>
 </body>

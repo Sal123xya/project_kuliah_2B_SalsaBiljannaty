@@ -2,11 +2,12 @@
     $conn = mysqli_connect("localhost", "root", "", "db_saya");
     $hasil = mysqli_query($conn, "select * from bukutamu");
     $jumlah = mysqli_num_rows($hasil);
-    echo "<center>Daftar Pengunjung</center>";
+    echo "<center><h1>Daftar Pengunjung<h1></center>";
     echo "Jumlah pengunjung : $jumlah";
-    $a=1;
+    $a=1; 
     while ($baris = mysqli_fetch_array($hasil))
     {
+        echo "<br>";
         echo "<br>";
         echo "$a";
         echo "<br>";
