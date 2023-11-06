@@ -1,5 +1,5 @@
 # Aplikasi Pemesanan Cafe/Restoran (DeCafe)
-Sebuah aplikasi yang dapat dingunakan untuk pemesanan minuman dan makanan pada cafe, restoran, rumah makan atau yang sejenisnya.
+Sebuah aplikasi yang dapat digunakan untuk pemesanan minuman dan makanan pada cafe, restoran, rumah makan atau yang sejenisnya.
 
 ## Pemilik/admin (1)
  -Melihat laporan
@@ -20,3 +20,18 @@ Sebuah aplikasi yang dapat dingunakan untuk pemesanan minuman dan makanan pada c
  -Menerima pesanan
  -Konfirmasi terima pesanan
  -Mengubah status pesanan "siap saji"
+
+ ## Pemilik/admin (1)
+ -Report
+ -Daftar Menu
+ -User
+ -Report
+## Kasir (2)
+ -Daftar Menu
+ -Pesanan
+## Pelayan(3)
+ -Daftar Menu
+ -Memilih menu
+ -Pesanan
+## Dapur(4)
+ -Pesanan
