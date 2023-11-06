@@ -41,7 +41,7 @@
 
         <!-- Footer -->
         <div class="fixed-bottom text-center bg-light py-2">
-            Copyright By Raisa Hafizah
+            Copyright By Salsa Biljannaty
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
