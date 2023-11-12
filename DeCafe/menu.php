@@ -128,7 +128,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM t
                         <div class="modal-dialog modal-xl modal-fullscreen-md-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Menu Makanan dan Minuman</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Menu Makanan dan Minuman</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -218,7 +218,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM t
                         <div class="modal-dialog modal-xl modal-fullscreen-md-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Menu Makanan dan Minuman</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Menu Makanan dan Minuman</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -324,7 +324,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM t
                         <div class="modal-dialog modal-md modal-fullscreen-md-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Data User</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Data Daftar Menu</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">

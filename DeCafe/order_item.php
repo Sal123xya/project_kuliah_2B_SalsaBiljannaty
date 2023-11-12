@@ -55,7 +55,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id, nama_menu FROM tb_daftar_menu
                 <div class="modal-dialog modal-lg modal-fullscreen-md-down">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Menu Makanan dan Minuman</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Order Item</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -129,7 +129,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id, nama_menu FROM tb_daftar_menu
                         <div class="modal-dialog modal-lg modal-fullscreen-md-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Menu Makanan dan Minuman</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Order Item</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -203,7 +203,7 @@ $select_kat_menu = mysqli_query($conn, "SELECT id, nama_menu FROM tb_daftar_menu
                         <div class="modal-dialog modal-md modal-fullscreen-md-down">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Data User</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Order Item</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
