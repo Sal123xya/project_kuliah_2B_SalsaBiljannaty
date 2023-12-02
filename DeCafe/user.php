@@ -239,7 +239,6 @@ while ($record = mysqli_fetch_array($query)) {
                                                     foreach ($data as $key => $value) {
                                                         if ($row['level'] == $key + 1) {
                                                             echo "<option selected value=" . ($key + 1) . "> $value</option>";
-
                                                         } else {
                                                             echo "<option value=" . ($key + 1) . "> $value</option>";
                                                         }
