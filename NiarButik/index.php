@@ -20,6 +20,7 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
 } elseif (isset($_GET['x']) && $_GET['x'] == 'login') {
     include "login.php";
 } else {
+    $page = "home.php";
     include "main.php";
 }
 ?>
