@@ -17,9 +17,10 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
 } elseif (isset($_GET['x']) && $_GET['x'] == 'report') {
     $page = "report.php";
     include "main.php";
-}  else {
+} elseif (isset($_GET['x']) && $_GET['x'] == 'login') {
+    include "login.php";
+}else {
     $page = "home.php";
     include "main.php";
 }
 ?>
-<!-- End Content -->
