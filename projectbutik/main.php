@@ -1,3 +1,12 @@
+<?php
+if(empty($_SESSION['username_projectbutik'])){
+    header('location:login');
+}
+include "connect.php";
+$query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' && password = '$password'");
+$hasil = mysqli_fetch_array($query);
+?>
+
 <!doctype html>
 <html lang="en">
 
