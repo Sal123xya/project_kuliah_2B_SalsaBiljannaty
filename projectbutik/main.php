@@ -1,9 +1,10 @@
 <?php
+//session_start();
 if(empty($_SESSION['username_projectbutik'])){
     header('location:login');
 }
-include "connect.php";
-$query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$username' && password = '$password'");
+include "./proses/connect.php";
+$query = mysqli_query($conn, "SELECT * FROM tb_user WHERE username = '$_SESSION[username_projectbutik]'");
 $hasil = mysqli_fetch_array($query);
 ?>
 

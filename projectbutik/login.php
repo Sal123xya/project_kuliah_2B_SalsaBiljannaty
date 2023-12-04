@@ -1,3 +1,9 @@
+<?php
+//session_start();
+if(!empty($_SESSION['username_projectbutik'])){
+    header('location:home');
+}
+?>
 <!doctype html>
 <html lang="en">
 

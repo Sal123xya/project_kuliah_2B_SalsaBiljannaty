@@ -18,7 +18,7 @@
                                 aria-current="page" href="home"><i class="bi bi-house"></i> Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ps-2<?php echo (isset($_GET['x']) && $_GET['x'] == 'product') ? 'active link-light' : 'link-dark'; ?>"
+                            <a class="nav-link ps-2<?php echo (isset($_GET['x']) && $_GET['x'] == 'product') ? 'active link-light' : 'link-dark'?>"
                                 href="product"><i class="bi bi-list-task"></i>
                                 product</a>
                         </li>
@@ -32,6 +32,7 @@
                                 href="request"><i class="bi bi-bookmarks"></i>
                                 request</a>
                         </li>
+                        <?php if($hasil['level'] == 1){ ?>
                         <li class="nav-item">
                             <a class="nav-link ps-2<?php echo (isset($_GET['x']) && $_GET['x'] == 'user') ? 'active link-light' : 'link-dark'; ?>"
                                 href="user"><i class="bi bi-person"></i> user</a>
@@ -41,6 +42,7 @@
                                 href="report"><i class="bi bi-bar-chart-line"></i>
                                 report</a>
                         </li>
+                        <?php } ?>
                     </ul>
                 </div>
             </div>
