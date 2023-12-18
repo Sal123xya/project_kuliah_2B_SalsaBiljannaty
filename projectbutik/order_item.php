@@ -17,7 +17,7 @@ while ($record = mysqli_fetch_array($query)) {
     // $pelanggan = $record['pelanggan'];
 }
 
-$select_menu = mysqli_query($conn, "SELECT id,nama_product FROM tb_daftar_product");
+$select_product = mysqli_query($conn, "SELECT id,nama_product FROM tb_daftar_product");
 ?>
 
 <div class="col-lg-9 mt-2">
@@ -258,7 +258,7 @@ $select_menu = mysqli_query($conn, "SELECT id,nama_product FROM tb_daftar_produc
                                                             if ($row['status'] == 1) {
                                                                 echo "<span class='badge text-bg-warning'>terima</span>";
                                                             } elseif ($row['status'] == 2) {
-                                                                echo "<span class='badge text-bg-primary'>terkirim</span>";
+                                                                echo "<span class='badge text-bg-primary'>selesai</span>";
                                                             } else {
                                                                 // Tidak ada tindakan, atau Anda dapat menampilkan pesan default jika diperlukan
                                                             }
@@ -310,7 +310,7 @@ $select_menu = mysqli_query($conn, "SELECT id,nama_product FROM tb_daftar_produc
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
                                             <button type="submit" class="btn" name="bayar_validate" value="12345"
-                                                style="background-color: #ffff66;">Bayar</button>
+                                                style="background-color: #FFE4C4;">Bayar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -353,7 +353,7 @@ $select_menu = mysqli_query($conn, "SELECT id,nama_product FROM tb_daftar_produc
                                             if ($row['status'] == 1) {
                                                 echo "<span class='badge text-bg-warning'>terima</span>";
                                             } elseif ($row['status'] == 2) {
-                                                echo "<span class='badge text-bg-primary'>terkirim</span>";
+                                                echo "<span class='badge text-bg-primary'>selesai</span>";
                                             }
                                             ?>
                                         </td>
