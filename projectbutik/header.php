@@ -7,7 +7,7 @@
     #grad1 {
         background-color: 	peachpuff;
         /* For browsers that do not support gradients */
-        background-image: linear-gradient(LightBlue, Azure);
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255,192,203));
     }
 
     /* #cart-icon {

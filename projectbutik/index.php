@@ -9,8 +9,8 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
 } elseif (isset($_GET['x']) && $_GET['x'] == 'kategori') {
     $page = "kategori.php";
     include "main.php";
-} elseif (isset($_GET['x']) && $_GET['x'] == 'request') {
-    $page = "request.php";
+} elseif (isset($_GET['x']) && $_GET['x'] == 'order') {
+    $page = "order.php";
     include "main.php";
 } elseif (isset($_GET['x']) && $_GET['x'] == 'user') {
     if ($_SESSION['level_projectbutik'] == 1) {
@@ -32,6 +32,22 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
     include "login.php";
 } elseif (isset($_GET['x']) && $_GET['x'] == 'logout') {
     include "proses/proses_logout.php";
+} elseif (isset($_GET['x']) && $_GET['x'] == 'kategori') {
+    if ($_SESSION['level_projectbutik'] == 1) {
+        $page = "kategori.php";
+        include "main.php";
+    } else {
+        $page = "home.php";
+        include "main.php";
+    }
+} elseif (isset($_GET['x']) && $_GET['x'] == 'orderitem') {
+    if ($_SESSION['level_projectbutik'] == 1) {
+        $page = "order_item.php";
+        include "main.php";
+    } else {
+        $page = "home.php";
+        include "main.php";
+    }
 } else {
     $page = "home.php";
     include "main.php";
