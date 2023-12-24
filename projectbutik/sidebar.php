@@ -34,6 +34,11 @@
                                 href="order"><i class="bi bi-cart3"></i>
                                 Order</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'transaksi') ? 'active-link link-dark' : 'link-dark'; ?>"
+                                href="transaksi"><i class="bi bi-terminal-plus"></i>
+                                Transaksi</a>
+                        </li>
                         <?php if($hasil['level'] == 1){ ?>
                         <li class="nav-item">
                             <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'user') ? 'active-link link-dark' : 'link-dark'; ?>"

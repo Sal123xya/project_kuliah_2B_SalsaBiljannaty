@@ -1,7 +1,7 @@
 <?php
 include "proses/connect.php";
 date_default_timezone_set('Asia/Jakarta');
-$query = mysqli_query($conn, "SELECT tb_order.id_order, tb_order.pelanggan, tb_order.alamat,  tb_order.waktu_order, SUM(tb_daftar_product.harga * tb_list_order.jumlah) AS total_harga
+$query = mysqli_query($conn, "SELECT tb_order.id_order, tb_order.pelanggan, tb_order.alamat,  tb_order.waktu_order, tb_bayar.id_bayar, SUM(tb_daftar_product.harga * tb_list_order.jumlah) AS total_harga
     FROM tb_order
     LEFT JOIN tb_list_order ON tb_list_order.kode_order = tb_order.id_order
     LEFT JOIN tb_daftar_product ON tb_daftar_product.id = tb_list_order.product
@@ -241,12 +241,12 @@ while ($record = mysqli_fetch_array($query)) {
                                                 class="bi bi-eye"></i></a>
 
                                         <button class="<?php echo (!empty($row['id_bayar'])) ? "btn btn-secondary
-                                                 btn-sm me-1 disabled" : "btn btn-success btn-sm me-1"; ?>"
+                                                btn-sm me-1 disabled" : "btn btn-success btn-sm me-1"; ?>"
                                             data-bs-toggle="modal" data-bs-target="#ModalEdit<?php echo $row['id_order'] ?>"><i
                                                 class="bi bi-pencil-square"></i></button>
 
                                         <button class="<?php echo (!empty($row['id_bayar'])) ? "btn btn-secondary
-                                                 btn-sm me-1 disabled" : "btn btn-danger btn-sm me-1"; ?>"
+                                                btn-sm me-1 disabled" : "btn btn-danger btn-sm me-1"; ?>"
                                             data-bs-toggle="modal"
                                             data-bs-target="#ModalDelete<?php echo $row['id_order'] ?>"><i
                                                 class="bi bi-trash"></i></button>

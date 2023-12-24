@@ -120,10 +120,10 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
             if (empty($result)) {
                 echo "Data product pakaian tidak ada";
             } else {
-            foreach ($result as $row) {
-                ?>
-                <!-- Modal View-->
-                <div class="modal fade" id="ModalView<?php echo $row['id'] ?>" tabindex="-1"
+                foreach ($result as $row) {
+                    ?>
+                    <!-- Modal View-->
+                    <div class="modal fade" id="ModalView<?php echo $row['id'] ?>" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl modal-fullscreen-md-down">
                             <div class="modal-content">
@@ -201,8 +201,6 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary" name="input_product_validate"
-                                                value="12345">Save changes</button>
                                         </div>
                                     </form>
                                 </div>
@@ -212,8 +210,8 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                     </div>
                     <!-- Akhir Modal View-->
 
-                <!-- Modal Edit-->
-                <div class="modal fade" id="ModalEdit<?php echo $row['id'] ?>" tabindex="-1"
+                    <!-- Modal Edit-->
+                    <div class="modal fade" id="ModalEdit<?php echo $row['id'] ?>" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl modal-fullscreen-md-down">
                             <div class="modal-content">
@@ -222,8 +220,8 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="needs-validation" novalidate action="proses/proses_edit_product.php" method="POST"
-                                        enctype="multipart/form-data">
+                                    <form class="needs-validation" novalidate action="proses/proses_edit_product.php"
+                                        method="POST" enctype="multipart/form-data">
                                         <input type="hidden" value="<?php echo $row['id'] ?>" name="id">
                                         <div class="row">
                                             <div class="col-lg-6">
@@ -318,8 +316,8 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                     </div>
                     <!-- Akhir Modal Edit-->
 
-                <!-- Modal Delete-->
-                <div class="modal fade" id="ModalDelete<?php echo $row['id'] ?>" tabindex="-1"
+                    <!-- Modal Delete-->
+                    <div class="modal fade" id="ModalDelete<?php echo $row['id'] ?>" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-md modal-fullscreen-md-down">
                             <div class="modal-content">
@@ -350,9 +348,9 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                     </div>
                     <!-- Akhir Modal Delete-->
 
-                <?php
-            }
-            
+                    <?php
+                }
+
                 ?>
                 <div class="table-responsive">
                     <table class="table table-hover">
@@ -402,9 +400,9 @@ $select_kat_product = mysqli_query($conn, "SELECT id_kat_product, kategori_produ
                                     </td>
                                     <td>
                                         <div class="d-flex">
-                                            
+
                                             <button class="btn btn-info btn-sm me-1" data-bs-toggle="modal"
-                                                data-bs-target="#ModalView<?php echo $row['id'] ?>" ><i
+                                                data-bs-target="#ModalView<?php echo $row['id'] ?>"><i
                                                     class="bi bi-eye"></i></button>
                                             <button class="btn btn-warning btn-sm me-1" data-bs-toggle="modal"
                                                 data-bs-target="#ModalEdit<?php echo $row['id'] ?>"><i

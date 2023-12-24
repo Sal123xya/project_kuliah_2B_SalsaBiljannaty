@@ -12,7 +12,16 @@ if (isset($_GET['x']) && $_GET['x'] == 'home') {
 } elseif (isset($_GET['x']) && $_GET['x'] == 'order') {
     $page = "order.php";
     include "main.php";
-} elseif (isset($_GET['x']) && $_GET['x'] == 'user') {
+} else if (isset($_GET['x']) && $_GET['x'] == 'transaksi') {
+    if ($_SESSION['level_projectbutik'] == 1) {
+        $page = "transaksi.php";
+        include "main.php";
+    } else {
+        $page = "home.php";
+        include "main.php";
+    }
+
+}elseif (isset($_GET['x']) && $_GET['x'] == 'user') {
     if ($_SESSION['level_projectbutik'] == 1) {
         $page = "user.php";
         include "main.php";

@@ -3,7 +3,23 @@ session_start();
 if (!empty($_SESSION['username_projectbutik'])) {
     header('location:home');
 }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include "proses/connect.php";
+    
+    $nama = isset($_POST['nama']) ? $_POST['nama'] : '';
+    $username = isset($_POST['username']) ? $_POST['username'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : ''; // Ingat untuk mengenkripsi password
+    $nohp = isset($_POST['nohp']) ? $_POST['nohp'] : '';
+    $alamat = isset($_POST['alamat']) ? $_POST['alamat'] : '';
+
+    $level = 2;
+
+    $query = "INSERT INTO tb_user (nama, username, password, nohp, alamat, level) VALUES ('$nama', '$username', '$password', '$nohp', '$alamat', '$level')";
+    // Eksekusi query dan tangani error jika perlu
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,10 +90,6 @@ if (!empty($_SESSION['username_projectbutik'])) {
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <input type="text" class="form-control" id="username" name="username" required>
-                </div>
-                <div class="mb-3">
-                    <label for="level" class="form-label">Level</label>
-                    <input type="level" class="form-control" id="level" name="level" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>

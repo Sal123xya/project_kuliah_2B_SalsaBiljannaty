@@ -11,7 +11,7 @@ while ($record = mysqli_fetch_array($query)) {
     $result[] = $record;
 }
 
-//$select_kat_menu = mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM tb_kategori_menu");
+//$select_kat_menu dibayar= mysqli_query($conn, "SELECT id_kat_menu, kategori_menu FROM tb_kategori_menu");
 ?>
 <div class="col-lg-9 mt-2">
     <div class="card">
